@@ -1,7 +1,7 @@
 {
     "name": "haosubject/framework",
     "description": "The Hao Framework",
-    "license": "dev",
+    "license": "Apache-2.0",
     "authors": [
         {
             "name": "huanghao",

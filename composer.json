@@ -2,7 +2,7 @@
     "name": "huanghao236/practice-mvc",
     "description": "test",
     "type": "library",
-    "license": "dev",
+    "license": "Apache-2.0",
     "authors": [
         {
             "name": "'huanghao'",
