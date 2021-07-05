@@ -3,7 +3,9 @@
 
 namespace App\Http\Models;
 
-class Channel
+use Hao\orm\Model;
+
+class Channel extends Model
 {
     protected $table = 'channel';
 }
