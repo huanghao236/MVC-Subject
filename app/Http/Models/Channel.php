@@ -3,7 +3,8 @@
 
 namespace App\Http\Models;
 
-use Hao\orm\Model;
+
+use Hao\Model;
 
 class Channel extends Model
 {
