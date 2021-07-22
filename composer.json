@@ -13,7 +13,8 @@
     "require": {
         "php": ">=7.1.0",
         "hao-subject/framework": "dev-main",
-        "hao-orm/orm": "dev-main"
+        "hao-orm/orm": "dev-main",
+        "symfony/var-dumper": "5.4.x-dev"
     },
     "autoload": {
         "psr-4": {

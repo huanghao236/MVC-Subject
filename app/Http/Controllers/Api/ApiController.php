@@ -13,8 +13,8 @@ class ApiController
 
     public function api(Request $request){
 
-        $test = Channel::test();
-        var_dump($test);exit();
+        $test = Channel::where('id','<>',1)->toSql();
+        dd($test);
         return 'hello word';
     }
 }
