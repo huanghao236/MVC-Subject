@@ -13,7 +13,7 @@ class ApiController
 
     public function api(Request $request){
 
-        $test = Channel::where('id','<>',1)->toSql();
+        $test = Channel::where('id',1)->where('name','这是name')->select('a','b','c')->toSql();
         dd($test);
         return 'hello word';
     }
