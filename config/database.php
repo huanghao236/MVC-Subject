@@ -15,11 +15,11 @@ return [
             // 服务器地址
             'hostname'        => env('hostname', '127.0.0.1'),
             // 数据库名
-            'database'        => env('database', ''),
+            'database'        => env('database', 'wx'),
             // 用户名
             'username'        => env('username', 'root'),
             // 密码
-            'password'        => env('password', ''),
+            'password'        => env('password', 'root'),
             // 端口
             'hostport'        => env('hostport', '3306'),
             // 数据库连接参数
