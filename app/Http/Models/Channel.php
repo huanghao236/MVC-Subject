@@ -8,5 +8,5 @@ use Hao\Model;
 
 class Channel extends Model
 {
-    protected $table = 'channel';
+    protected $table = 'users';
 }

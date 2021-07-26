@@ -13,7 +13,7 @@ class ApiController
 
     public function api(Request $request){
 
-        $test = Channel::where('id',1)->where('name','这是name')->selectRaw('d,e,f,g')->select('a','b','c')->get();
+        $test = Channel::where('id',1)->get();
         dd($test);
         return 'hello word';
     }
