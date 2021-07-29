@@ -13,7 +13,8 @@ class ApiController
 
     public function api(Request $request){
 
-        $test = Channel::where('id',1)->get();
+        $test = Channel::first();
+        $test->name = 454878;
         dd($test);
         return 'hello word';
     }
