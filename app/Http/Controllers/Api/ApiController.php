@@ -13,12 +13,12 @@ class ApiController
     ];
 
     public function api(Request $request){
-
         $models = Channel::selectRaw('id,name')->with(['goods' => function($query){
             $query->selectRaw('id,goods_name,goods_aumont');
         },'names' => function($query){
             $query->selectRaw('id,goods_name');
-        }])->first();
+        }])->first()->toArray();
+        dd($models);
         foreach ($models as $model){
             dd($model,$model->name);
         }
