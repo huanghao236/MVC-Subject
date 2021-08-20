@@ -13,14 +13,10 @@ class ApiController
     ];
 
     public function api(Request $request){
-        $models = Channel::selectRaw('id,name')->with(['goods' => function($query){
-            $query->selectRaw('id,goods_name,goods_aumont');
-        },'names' => function($query){
-            $query->selectRaw('id,goods_name');
-        }])->first()->toArray();
-        dd($models);
-        foreach ($models as $model){
-            dd($model,$model->name);
-        }
+        //$model = Channel::selectRaw('id,name')->first();
+        $model = Channel::insert(['name' => 123]);
+        dd($model);
+        $model = Channel::where('test_id',2)->delete();
+        dd($model);
     }
 }

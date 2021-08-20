@@ -8,7 +8,7 @@ use Hao\Model;
 
 class Channel extends Model
 {
-    protected $table = 'users';
+    protected $table = 'test';
 
     public function goods()
     {
