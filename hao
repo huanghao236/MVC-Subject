@@ -1,0 +1,8 @@
+#!/usr/bin/env php
+<?php
+namespace Hao;
+ini_set("display_errors","On");
+//composer自动加载
+require __DIR__ . '/vendor/autoload.php';
+//初始化
+(new App())->console->run();
