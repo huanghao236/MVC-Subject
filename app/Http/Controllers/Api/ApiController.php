@@ -14,8 +14,9 @@ class ApiController
 
     public function api(Request $request){
         //$model = Channel::selectRaw('id,name')->first();
-        $model = Channel::insert(['name' => 123]);
-        dd($model);
+        $model = Channel::first();
+        $model->name = 'asdasdasdsad';
+        dd($model->save());
         $model = Channel::where('test_id',2)->delete();
         dd($model);
     }
