@@ -17,3 +17,4 @@ Route::group('web',function(){
 });
 
 Route::post('getApi','Api\ApiController@api');
+Route::get('/','Api\ApiController@api');
