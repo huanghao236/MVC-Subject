@@ -15,13 +15,9 @@ class RouteServiceProvider
              ->namespace($this->namespace)
              ->routeQuote('routes/api.php');
 
-        Route::middleware('web')
+        Route::prefix('getApi')
+             ->middleware('web')
              ->namespace($this->namespace)
              ->routeQuote('routes/web.php');
-
-        Route::middleware('apis')
-             ->namespace($this->namespace)
-             ->routeQuote('routes/web.php');
-
     }
 }
