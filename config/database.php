@@ -15,7 +15,7 @@ return [
             // 服务器地址
             'hostname'        => env('hostname', '127.0.0.1'),
             // 数据库名
-            'database'        => env('database', 'wx'),
+            'database'        => env('database', 'mvc-subject'),
             // 用户名
             'username'        => env('username', 'root'),
             // 密码

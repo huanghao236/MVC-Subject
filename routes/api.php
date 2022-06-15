@@ -1,20 +1,10 @@
 <?php
 use Hao\facade\Route;
 
-/*Route::get('index','WebController@index');
-Route::get('dd/bb','WebController@index');
-Route::post('dd/bb','WebController@index');*/
 
-/*Route::group('api',function(){
-    Route::group('groupRoute',function(){
-        Route::get('getApi','Api\ApiController@api');
-        Route::post('postApi','Api\ApiController@api');
-    });
-});*/
-
-/*Route::group('web',function(){
-    Route::post('getApi','Api\ApiController@api');
+Route::group('user',function (){
+    Route::post('add','Api\UserController@add');
+    Route::post('delete','Api\UserController@delete');
+    Route::post('update','Api\UserController@update');
+    Route::get('get','Api\UserController@get');
 });
-Route::get('/','Api\ApiController@api');*/
-
-Route::get('getApi','Api\ApiController@api');

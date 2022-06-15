@@ -8,8 +8,9 @@ use Hao\Request;
 class ApiController
 {
 
-    public function api(Request $request){
-        dd('success');
+    public function api(Request $request): string
+    {
+        return '这是api接口地址';
         //$model = Channel::selectRaw('id,name')->first();
         /*$model = Channel::first();
         $model->name = 'asdasdasdsad';
