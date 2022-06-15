@@ -7,10 +7,6 @@ use Hao\Request;
 
 class ApiController
 {
-    //中间件配置：except黑名单,only白名单
-    public $middleware = [
-        'web' => ['except' => [''],'only' => ['api']]
-    ];
 
     public function api(Request $request){
         dd('success');

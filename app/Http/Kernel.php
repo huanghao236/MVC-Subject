@@ -20,6 +20,8 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $routeMiddleware = [
-        'web' => \App\Http\Middleware\Web::class
+        'web' => [
+            \App\Http\Middleware\Web::class
+        ]
     ];
 }
