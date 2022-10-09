@@ -25,3 +25,29 @@ if (!function_exists('database_path')) {
         return dirname(dirname(__DIR__) . DIRECTORY_SEPARATOR, 4) . DIRECTORY_SEPARATOR . $path;
     }
 }
+
+if (!function_exists('xhprofStart')) {
+    /**
+     * xhprof性能测试工具开始
+     */
+    function xhprofStart()
+    {
+        xhprof_enable(XHPROF_FLAGS_CPU + XHPROF_FLAGS_MEMORY);
+    }
+}
+
+if (!function_exists('xhprofEnd')) {
+    /**
+     * xhprof性能测试工具开始
+     */
+    function xhprofEnd()
+    {
+        $data = xhprof_disable();
+        include_once "D:/phpstudy_pro/xhprof/xhprof_lib/utils/xhprof_lib.php";
+        include_once "D:/phpstudy_pro/xhprof/xhprof_lib/utils/xhprof_runs.php";
+
+        $objXhprofRun = new \XHProfRuns_Default();
+        $run_id = $objXhprofRun->save_run($data, "xhprof");
+        var_dump($run_id);
+    }
+}

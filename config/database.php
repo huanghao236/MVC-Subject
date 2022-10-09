@@ -11,17 +11,17 @@ return [
     'connections' => [
         'mysql' => [
             // 数据库类型
-            'type'            => env('type', 'mysql'),
+            'type'            => env('TYPE', 'mysql'),
             // 服务器地址
-            'hostname'        => env('hostname', '127.0.0.1'),
+            'hostname'        => env('HOSTNAME', '127.0.0.1'),
             // 数据库名
-            'database'        => env('database', 'mvc-subject'),
+            'database'        => env('DATABASE', 'mvc-subject'),
             // 用户名
-            'username'        => env('username', 'root'),
+            'username'        => env('USERNAME', 'root'),
             // 密码
-            'password'        => env('password', 'root'),
+            'password'        => env('PASSWORD', 'root'),
             // 端口
-            'hostport'        => env('hostport', '3306'),
+            'hostport'        => env('HOSTPORT', '3306'),
             // 数据库连接参数
             'params'          => [],
             // 数据库编码默认采用utf8

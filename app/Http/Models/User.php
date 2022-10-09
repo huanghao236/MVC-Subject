@@ -6,7 +6,7 @@ use Hao\Model;
 
 class User extends Model
 {
-    protected $table = 'user';
+    protected $table = 'users';
 
 
 }
